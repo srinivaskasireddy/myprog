@@ -1,0 +1,23 @@
+<suite name="google">
+    <test name="t1_firefox">
+        <parameter name="browser" value="firefox" />
+            <classes>
+                <class name="Ex.Test_ex"/>
+            </classes>
+    </test>
+    
+    <test name="t1_chrome">
+    <parameter name="browser" value="chrome" />
+         <classes>
+             <class name="Ex.Test_ex"/>
+         </classes>
+    </test>
+     
+    
+     <listeners>
+  <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+     </listeners>	
+    
+</suite>
